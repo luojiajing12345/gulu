@@ -9,7 +9,7 @@
     </button>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @keyframes spin { 0%{transform: rotate(0deg)} 100%{transform: rotate(360deg)} }
     .g-button{
         font-size:var(--font-size);height: var(--button-height);padding: 0 1.1em;border-radius:var(--border-radius);border:1px solid var(--border-color);background:var(--button-bg);display: inline-flex;justify-content: center;align-items: center;vertical-align: middle;
@@ -29,6 +29,7 @@
 <script>
     import Icon from './icon'
     export default {
+        name: 'GuluButton',
         components:{
             'g-icon':Icon
         },
