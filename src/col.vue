@@ -40,7 +40,7 @@
 
 <style scoped   lang="scss">
     .col{
-        width: 50%;
+
         $class-prefix: col-;
         @for $n from 1 through 24 {
             &.#{$class-prefix}#{$n} {
