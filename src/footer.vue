@@ -1,5 +1,8 @@
 <template>
-    <slot></slot>
+    <div class="footer">
+        <slot></slot>
+    </div>
+
 </template>
 
 <style lang="scss" scoped>
