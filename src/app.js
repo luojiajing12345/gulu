@@ -40,9 +40,18 @@ new Vue({
     }
     ,
     methods:{
-        showToast(){
+        showToast1(){
+            this.showToast('top')
+        },
+        showToast2(){
+            this.showToast('middle')
+        },
+        showToast3(){
+            this.showToast('bottom')
+        },
+        showToast(position){
             this.$toast(`${parseInt(Math.random()*100)}`,{
-                position:'bottom',
+                position,
                 enableHtml: false,
                 closeButton:{
                     text:'已充值',
