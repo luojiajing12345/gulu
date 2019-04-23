@@ -17,10 +17,10 @@
         name: 'GuluToast',
         props: {
             autoClose: {
-                type: [Boolean,Number],
-                default: true,
-                validator(value){
-                    return value===false || typeof value === 'number'
+                type: [Boolean, Number],
+                default: 5,
+                validator (value) {
+                    return value === false || typeof value === 'number';
                 }
             },
             closeButton: {
