@@ -50,19 +50,10 @@ new Vue({
     }
     ,
     methods:{
-        yyy(data){
+        yyy(){
             console.log('yyy')
-            console.log(data);
         },
-        showToast1(){
-            this.showToast('top')
-        },
-        showToast2(){
-            this.showToast('middle')
-        },
-        showToast3(){
-            this.showToast('bottom')
-        },
+
         showToast(position){
             this.$toast(`${parseInt(Math.random()*100)}`,{
                 position,
