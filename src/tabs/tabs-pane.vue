@@ -3,11 +3,10 @@
         <slot></slot>
     </div>
 </template>
-
 <script>
     export default {
         name: 'GuluTabsPane',
-        inject:['eventBus'],
+        inject: ['eventBus'],
         data () {
             return {
                 active: false
@@ -32,14 +31,11 @@
             })
         }
     }
-
 </script>
-
-<style scoped lang="scss">
-    .tabs-pane{
+<style lang="scss" scoped>
+    .tabs-pane {
         padding: 1em;
-        &.active{
-
+        &.active {
         }
     }
 </style>
